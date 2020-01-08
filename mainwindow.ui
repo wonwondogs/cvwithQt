@@ -6,43 +6,65 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>759</width>
-    <height>387</height>
+    <width>729</width>
+    <height>604</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="display_image">
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>70</y>
-      <width>511</width>
-      <height>241</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
+      <x>70</x>
       <y>20</y>
-      <width>241</width>
-      <height>31</height>
+      <width>611</width>
+      <height>501</height>
      </rect>
     </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt;YEEEEEEEAHHHHHHHHHH!!!!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="display_image">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>511</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>debug</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PrintPath">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>440</y>
+        <width>321</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="FileButton">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>440</y>
+        <width>117</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ファイル選択</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -50,16 +72,10 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>759</width>
+     <width>729</width>
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menutesttest">
-    <property name="title">
-     <string>testtest</string>
-    </property>
-   </widget>
-   <addaction name="menutesttest"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

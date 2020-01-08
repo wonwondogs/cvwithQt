@@ -3,6 +3,7 @@
 #include <QApplication>
 #include <QImage>
 #include <stdio.h>
+#include <iostream>
 
 #include <opencv2/core.hpp>
 #include <opencv2/highgui.hpp>
