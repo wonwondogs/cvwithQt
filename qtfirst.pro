@@ -16,15 +16,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    image_window.cpp \
     main.cpp \
-    mainwindow.cpp \
-    opencvworker.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h \
-    opencvworker.h
+    image_window.h \
+    mainwindow.h
 
 FORMS += \
+    image_window.ui \
     mainwindow.ui
 
 # INCLUDEPATH += /usr/local/include
@@ -33,6 +34,8 @@ LIBS += -L/usr/local/lib
 QT_CONFIG -= no-pkg-config
 CONFIG += link_pkgconfig
 PKGCONFIG += opencv4
+
+ICON = icon.icns
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
